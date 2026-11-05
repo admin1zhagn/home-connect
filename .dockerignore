@@ -1,0 +1,10 @@
+# 减少构建上下文，提升镜像构建速度
+**/node_modules
+**/target
+**/.git
+**/data
+frontend/dist
+backend/src/main/resources/static
+**/*.log
+**/.mvn/wrapper/maven-wrapper.jar
+*.md

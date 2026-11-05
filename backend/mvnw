@@ -1,0 +1,6 @@
+#!/bin/sh
+# Maven Wrapper minimal launcher (delegates to maven-wrapper.jar which downloads the distribution)
+# Uses the explicit main class because the 3.3.2 wrapper jar ships without a Main-Class in its manifest.
+set -e
+MY_HOME="$(cd "$(dirname "$0")" && pwd)"
+exec java -Dmaven.multiModuleProjectDirectory="$MY_HOME" -cp "$MY_HOME/.mvn/wrapper/maven-wrapper.jar" org.apache.maven.wrapper.MavenWrapperMain "$@"

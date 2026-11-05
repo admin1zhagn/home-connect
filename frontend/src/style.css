@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: #f5f7fa;
+  color: #303133;
+}
+
+a {
+  color: #409eff;
+  text-decoration: none;
+}
+
+.page-container {
+  padding: 16px;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.card-block {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .page-container {
+    padding: 10px;
+  }
+  .card-block {
+    padding: 12px;
+  }
+
+  /* 工具栏竖排、输入占满宽度 */
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .toolbar .el-input,
+  .toolbar .el-select,
+  .toolbar .el-date-editor {
+    width: 100% !important;
+  }
+
+  /* 宽表格横向滚动（全局兜底，保证所有 el-table 在手机上可滑动查看） */
+  .el-table {
+    width: 100%;
+    font-size: 12px;
+    overflow-x: auto;
+  }
+  .el-table .el-table__body,
+  .el-table .el-table__header {
+    width: max-content !important;
+  }
+
+  /* 弹窗在手机上占满屏宽，避免固定 px 被裁切 */
+  .el-dialog {
+    width: 92% !important;
+    max-width: 92% !important;
+  }
+  .el-dialog__body {
+    padding: 12px;
+  }
+
+  /* 分页器居中并允许换行 */
+  .el-pagination {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .pager {
+    justify-content: center !important;
+  }
+
+  /* 客户详情头部：标题与按钮竖排 */
+  .detail-head {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .detail-head > div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .detail-head > div:last-child .el-button {
+    flex: 1 1 auto;
+  }
+
+  /* 显式滚动容器（页面内可主动用 .table-scroll 包裹表格） */
+  .table-scroll {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}

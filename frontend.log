@@ -1,0 +1,37 @@
+
+> home-connect-frontend@1.0.0 dev
+> vite
+
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m723[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m21:30:29[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layout/MainLayout.vue[22m
+[2m21:30:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/CustomerEdit.vue[22m
+[2m21:30:47[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/CustomerEdit.vue[22m
+[2m21:58:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/CustomerDetail.vue[22m
+[2m21:58:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/CustomerDetail.vue[22m
+[2m21:58:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/CustomerDetail.vue[22m
+[2m21:59:01[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/CustomerDetail.vue[22m
+[2m22:22:12[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/CustomerDetail.vue[22m
+[2m22:22:12[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/CustomerEdit.vue[22m
+[2m22:22:12[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/CustomerList.vue[22m
+[2m22:22:12[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/AnalysisHistory.vue[22m
+[2m22:22:33[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/views/ProductLibrary.vue[22m
+[2m22:22:50[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/customers/page?page=1&size=10&keyword=&status=&source=[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m22:22:53[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/customers/page?page=1&size=1000[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m22:22:55[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/customers/page?page=1&size=1000[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m22:22:55[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/products/page?page=1&size=10&keyword=&planType=[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)

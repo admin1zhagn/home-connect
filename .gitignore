@@ -1,0 +1,26 @@
+# 构建产物 / 运行时产物
+backend/target/
+backend/data/
+backend/server.log
+backend/run.log
+backend/*.log
+
+# Maven Wrapper 自动下载的发行包（首次运行生成）
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# 前端
+frontend/node_modules/
+frontend/dist/
+frontend/*.log
+
+# 操作系统 / 编辑器
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# 前后端一体打包时由 Docker/脚本自动生成的前端静态产物（勿提交）
+backend/src/main/resources/static/
+
+# 工作区元数据
+.workbuddy/
